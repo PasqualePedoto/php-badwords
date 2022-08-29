@@ -1,5 +1,9 @@
 <?php
-$nome = "Cavallo"
+$paragraph = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+Architecto nam possimus quam maxime vero neque eum at quo iure. Non deleniti 
+possimus accusantium, sequi minus autem vitae unde perspiciatis itaque.";
+
+$paragraph_length = strlen($paragraph);
 ?>
 
 <!DOCTYPE html>
@@ -8,9 +12,12 @@ $nome = "Cavallo"
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PHP BADWORDS</title>
 </head>
 <body>
-    <h1>Ciao <?= $nome ?></h1>
+    <!-- Paragrafo preso con PHP -->
+    <p><?= $paragraph ?></p>
+    <!-- Lunghezza del paragrfo calcolata con un metodo PHP -->
+    <div>Lunghezza del paragrafo: <?= $paragraph_length ?></div>
 </body>
 </html>
