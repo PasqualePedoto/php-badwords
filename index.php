@@ -1,3 +1,7 @@
+<?php
+$nome = "Cavallo"
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +11,6 @@
     <title>Document</title>
 </head>
 <body>
-    ciao tunnuzzoo
+    <h1>Ciao <?= $nome ?></h1>
 </body>
 </html>
