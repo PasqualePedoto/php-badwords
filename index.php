@@ -14,6 +14,9 @@ $bad_word = $_GET['badword'];
 
 // Censuro il poaragrafp
 $paragraph_censured = str_replace($bad_word,'*****',$paragraph);
+
+// Lunghezza del testo censurato
+$paragraph_censured_length = strlen($paragraph_censured);
 ?>
 
 <!DOCTYPE html>
@@ -33,5 +36,7 @@ $paragraph_censured = str_replace($bad_word,'*****',$paragraph);
     <div>Parola da censurare: <?= $bad_word ?></div>
     <!-- Testo censurato -->
     <div>Testo censurato: <?= $paragraph_censured ?></div>
+    <!-- Lunghezza del testo censurato -->
+    <div>Lunghezza del testo censurato: <?= $paragraph_censured_length  ?></div>
 </body>
 </html>
